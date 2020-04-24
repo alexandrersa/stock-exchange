@@ -1,0 +1,19 @@
+pipeline:
+  build:
+    image: python:3.8.2
+    environment:
+        # I use dj_database_url to specify my DB settings
+      - DATABASE_URL=stock://stock@localhost
+    commands:
+      - pip3 install -r requirements.txt
+      - cd stock_exchange_prediction
+      - python ./manage.py test
+      - cd ..
+    when:
+      branch: [ master ]
+      event: [push, pull_request] # trigger step on push and pull events
+services:
+  database:
+    image: postgres
+    environment:
+      - DATABASE_URL=stock://stock@localhost
