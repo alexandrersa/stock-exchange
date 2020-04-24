@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    container_name: olist_db
+    environment:
+      - POSTGRES_DB=olist
+      - POSTGRES_USER=olist
+      - POSTGRES_PASSWORD=olist
+    ports:
+      - "5432:5432"

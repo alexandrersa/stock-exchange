@@ -127,3 +127,20 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+*.py[co]
+.DS_Store
+.idea
+*.swp*
+*~
+*.tmproj
+*.log
+.env
+tmp
+.venv
+.vscode
+.coverage
+*.db
+*.sqlite
+*.sqlite3
