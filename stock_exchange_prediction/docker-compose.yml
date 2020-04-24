@@ -2,10 +2,10 @@ version: '3'
 services:
   db:
     image: postgres
-    container_name: olist_db
+    container_name: stock_db
     environment:
-      - POSTGRES_DB=olist
-      - POSTGRES_USER=olist
-      - POSTGRES_PASSWORD=olist
+      - POSTGRES_DB=stock
+      - POSTGRES_USER=stock
+      - POSTGRES_PASSWORD=stock
     ports:
-      - "5432:5432"
+      - "5433:5432"

@@ -13,7 +13,7 @@ SECRET_KEY = 'hcw#$55f$msu#+q$crcr4n%3v#b4%1r8k-frc9%fh$zln=dz**'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stock-exchange-prediction.herokuapp.com']
+ALLOWED_HOSTS = ['stock-exchange-prediction.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
